@@ -74,7 +74,7 @@ TRANSCRIPTION_LANG=en
 TRANSCRIPTION_DIR=./transcricoes
 ```
 
-**3. Execute os testes automatizados**
+**3. Execute**
 ```
 py project.py
 ```
