@@ -81,11 +81,12 @@ py project.py
 
 ![project](https://github.com/user-attachments/assets/384372e9-a76d-4ec2-ae2b-12998f0b6666)
 
-🔗 Referências
+## 🔗 Referências
 - [Biblioteca youtool](https://github.com/PythonicCafe/youtool)
 - Documentação do trabalho enviada pelo professor Fernando Masanori
 
-✅ Feedback
+## ✅ Feedback
+
 Caso tenha algum feedback, entre em contato!
 
 <a href = "mailto:juliagonzalezmoreira@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"></a> <a href="https://www.linkedin.com/in/julia-gonzalez-moreira/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
