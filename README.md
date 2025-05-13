@@ -14,10 +14,8 @@ Este é um projeto prático para a disciplina Laboratório de Banco de Dados, ci
 </p>
 
 ## 📁 Estrutura
-- `.env`                   : Variáveis de ambiente (MONGO_URI, YOUTUBE_API_KEYS, CHANNEL_URL)
-- `etl.py`                  : Script principal de coleta e processamento de dados
+- `project.py`                  : Script principal de coleta e processamento de dados
 - `requirements.txt`        : Arquivo com dependências do projeto
-- `test_etl.py`             : Testes automatizados para o código
 - `README.md`                Informações do projeto.
 - `.gitignore`              : Arquivo para ignorar arquivos 
   
@@ -35,33 +33,10 @@ Este é um projeto prático para a disciplina Laboratório de Banco de Dados, ci
 * Coleta de Transcrições: Coleta as transcrições dos vídeos, caso estejam disponíveis.
 * Coleta de Livechat/Superchat: Coleta informações de chats ao vivo, incluindo superchats.
 
-## 🔎 Testes
-1. test_get_db:
-* Objetivo: Verificar se a função get_db conecta corretamente ao MongoDB com a URI configurada.
-* O que é testado: Confirma se a URI do MongoDB é usada corretamente para estabelecer a conexão.
-2. test_get_yt:
-* Objetivo: Testar se a função get_yt configura corretamente o cliente da API do YouTube com as chaves de API.
-* O que é testado: Verifica se as chaves de API são passadas corretamente para a biblioteca youtool.
-3. test_fetch_and_store:
-* Objetivo: Verificar se a função fetch_and_store coleta e armazena vídeos do YouTube no MongoDB.
-* O que é testado: Confirma que os vídeos são armazenados corretamente e o número de vídeos processados é o esperado.
-4. test_fetch_and_store_comments:
-* Objetivo: Testar se a função fetch_and_store_comments coleta e armazena os comentários dos vídeos no MongoDB.
-* O que é testado: Verifica se os comentários são armazenados corretamente com atributos como autor e conteúdo.
-5. test_fetch_and_store_transcriptions:
-* Objetivo: Verificar se a função fetch_and_store_transcriptions coleta e armazena as transcrições dos vídeos no MongoDB.
-* O que é testado: Confirma que as transcrições são coletadas e armazenadas corretamente, incluindo o status e nome do arquivo.
-6. test_fetch_and_store_livechat:
-* Objetivo: Testar se a função fetch_and_store_livechat coleta e armazena dados do livechat (incluindo superchats) no MongoDB.
-* O que é testado: Verifica se as mensagens do livechat e os superchats são armazenados corretamente, validando valores monetários dos superchats.
-
 ## 🛠️ Tecnologias Usadas
 * Python
 * youtool (biblioteca para interagir com a API do YouTube)
 * MongoDB (Banco de Dados NoSQL)
-* pytest (framework para testes)
-* mongomock (mocking para testes com MongoDB)
-* python-dotenv (carregamento de variáveis de ambiente)
 
 ## 📍 Instruções 
 
@@ -90,14 +65,18 @@ pip install -r requirements.txt
 Crie um arquivo .env e adicione as variáveis de ambiente:
 
 ```
-MONGO_URI="mongodb+srv://<usuario>:<senha>@cluster0.mongodb.net/youtube_data?retryWrites=true&w=majority"
-YOUTUBE_API_KEYS="sua_api_key_1,sua_api_key_2"
-CHANNEL_URL="https://youtube.com/@AmeliaDimoldenberg"
+YOUTUBE_API_KEYS="chave_api1, chave_api2"
+CHANNEL_URL="https://youtube.com/@seu-canal"
+MONGO_URI="mongodb+srv://<user>:<senha>@cluster0.slcacxc.mongodb.net/..." #Atlas MongoDB
+DB_NAME=youtube_analysis #nome do banco
+SINCE=2024-01-01T00:00:00Z
+TRANSCRIPTION_LANG=en
+TRANSCRIPTION_DIR=./transcricoes
 ```
 
 **3. Execute os testes automatizados**
 ```
-pytest
+py project.py
 ```
 
 🔗 Referências
