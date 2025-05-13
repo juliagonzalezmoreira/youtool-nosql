@@ -79,6 +79,8 @@ TRANSCRIPTION_DIR=./transcricoes
 py project.py
 ```
 
+![project](https://github.com/user-attachments/assets/384372e9-a76d-4ec2-ae2b-12998f0b6666)
+
 🔗 Referências
 - [Biblioteca youtool](https://github.com/PythonicCafe/youtool)
 - Documentação do trabalho enviada pelo professor Fernando Masanori
