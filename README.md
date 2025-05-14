@@ -86,7 +86,7 @@ py project.py
   <summary>📸 Resultados do projeto (clique para expandir)</summary>
 	
   ### GIF
-  ![project](https://github.com/user-attachments/assets/384372e9-a76d-4ec2-ae2b-12998f0b6666)
+  ![project](https://github.com/user-attachments/assets/d97a404f-e9b2-4c1d-a293-cc109160aa7c)
 
   ### Testes
   ![tests](https://github.com/user-attachments/assets/6cd586ce-d587-4bc9-81be-39b95ab655e0)
