@@ -1,5 +1,4 @@
-.venv
-
 .env
-
 transcricoes/
+__pycache__/
+.pytest_cache/

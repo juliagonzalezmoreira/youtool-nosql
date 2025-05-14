@@ -4,7 +4,7 @@
 
 <p align="center">
 	<b><i>
-Este é um projeto prático para a disciplina Laboratório de Banco de Dados, cijo objetivo é coletar e armazenar dados do YouTube utilizando a API do YouTube, a biblioteca youtool, e o MongoDB.
+Este é um projeto prático para a disciplina Laboratório de Banco de Dados, cujo objetivo é coletar e armazenar dados do YouTube utilizando a API do YouTube, a biblioteca youtool, e o MongoDB.
   </i></b>
 </p>
 
@@ -13,12 +13,6 @@ Este é um projeto prático para a disciplina Laboratório de Banco de Dados, ci
 	<img alt="Linguagem principal" src="https://img.shields.io/github/languages/top/juliagonzalezmoreira/youtool-nosql?color=6272a4"/>
 </p>
 
-## 📁 Estrutura
-- `project.py`                  : Script principal de coleta e processamento de dados
-- `requirements.txt`        : Arquivo com dependências do projeto
-- `README.md`                Informações do projeto.
-- `.gitignore`              : Arquivo para ignorar arquivos 
-  
 ## 🎯 Objetivos
 * Utilizar a biblioteca youtool para acessar a API do YouTube e coletar dados.
 * Armazenar os dados coletados em um banco de dados NoSQL (MongoDB).
@@ -33,6 +27,14 @@ Este é um projeto prático para a disciplina Laboratório de Banco de Dados, ci
 * Coleta de Transcrições: Coleta as transcrições dos vídeos, caso estejam disponíveis.
 * Coleta de Livechat/Superchat: Coleta informações de chats ao vivo, incluindo superchats.
 
+## 📁 Estrutura
+- `project.py`                  : Script principal de coleta e processamento de dados
+- `tests_all.py`                  : Script de testes
+- `reset_db.py`                  : Reseta o banco caso necessário
+- `requirements.txt`        : Arquivo com dependências do projeto
+- `README.md`                Informações do projeto.
+- `.gitignore`              : Arquivo para ignorar arquivos 
+
 ## 🛠️ Tecnologias Usadas
 * Python
 * youtool (biblioteca para interagir com a API do YouTube)
@@ -44,6 +46,7 @@ Este é um projeto prático para a disciplina Laboratório de Banco de Dados, ci
 Para executar o projeto localmente, é necessário ter os seguintes requisitos:
 - [Python](https://www.python.org/)
 - [MongoDB](https://www.mongodb.com/)
+- [API Keys](https://console.cloud.google.com/)
 
 ❗️ Certifique-se de que todas as ferramentas necessárias estejam instaladas em sua máquina local e, em seguida, prossiga com os seguintes passos. <br>
 
@@ -79,7 +82,19 @@ TRANSCRIPTION_DIR=./transcricoes
 py project.py
 ```
 
-![project](https://github.com/user-attachments/assets/384372e9-a76d-4ec2-ae2b-12998f0b6666)
+<details>
+  <summary>📸 Resultados do projeto (clique para expandir)</summary>
+	
+  ### GIF
+  ![project](https://github.com/user-attachments/assets/384372e9-a76d-4ec2-ae2b-12998f0b6666)
+
+  ### Testes
+  ![tests](https://github.com/user-attachments/assets/6cd586ce-d587-4bc9-81be-39b95ab655e0)
+
+  ### MongoDB
+  ![bd](https://github.com/user-attachments/assets/eae1299c-9dae-4e81-93b1-a60c9951deee)
+
+</details>
 
 ## 🔗 Referências
 - [Biblioteca youtool](https://github.com/PythonicCafe/youtool)
